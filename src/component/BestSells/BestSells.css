@@ -1,0 +1,156 @@
+/* Daily Best Sells */
+.bestsells {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.coffee-img {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  background-image: url(./Bestsellsimg/coffee-beans-with-props-making-coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+  color: #fff;
+}
+.coffee-img h3,
+p {
+  font-weight: 900;
+}
+
+.bestSellEl {
+  position: absolute;
+  width: 800px;
+  top: 0;
+  margin-left: 18em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  /* display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 1em; */
+  color: #000;
+}
+
+.bestselldata {
+  border: 1px solid var(--header);
+  border-radius: 5px;
+}
+.bestselldata:hover{
+  border: 1px solid var(--border-hover);
+  box-shadow: var(--shadow);
+}
+.bestsell-category {
+  padding: 1em;
+  font-size: 0.8em;
+}
+.bestsell-category span {
+  color: var(--gray-color);
+}
+.bestsell-category p:hover {
+  color: var(--border-hover);
+  cursor: pointer;
+}
+.bestsell-category ul {
+  position: relative;
+  left: -2em;
+  display: flex;
+  gap: 0.5em;
+}
+.bestsell-category a {
+  text-decoration: line-through;
+  color: var(--gray-color);
+}
+.cart-btn {
+  width: 200px;
+  margin-left: 0.5em;
+}
+
+.bsstar {
+  margin-left: 2.5em;
+  color: var(--bsstar);
+}
+.bsstar span {
+  margin-left: 0.5em;
+}
+
+/* end of Daily Best Sells */
+
+/* Daily Best Sells time data */
+.time-data{
+  max-width: 200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-data p{
+  border: 2px solid var(--header);
+  border-radius: 5px;
+  padding: 0.6em;
+  width: 70px;
+  height: 60px;
+  position: relative;
+  left: -0.5em;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+.time-data span{
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  color: var(--gray-color);
+  font-weight: 100;
+  line-height: 2;
+}
+
+/* end of Daily Best Sells time-data */
+
+@media(max-width: 56em){
+  .bestsells{
+    max-width: 730px;
+    margin: auto 1em;
+    margin-top: 5em;
+  }
+  .bestSellEl{
+    width: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1em;
+    border-radius: 5px;
+  }
+}
+
+@media(max-width: 31em){
+  .bestsells{
+    max-width: 500px;
+  }
+  .bestsells h5{
+    margin-left: 2em;
+  }
+  .coffee-img{
+    max-width: 500px;
+    margin: auto;
+  }
+  .bestSellEl{
+    
+    width: 300px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    margin-left: -1.5em;
+    top: 33em;
+    border-radius: 5px;
+  }
+  .bestselldata img{
+    margin: 2em;
+  }
+}

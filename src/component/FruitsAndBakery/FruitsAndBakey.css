@@ -1,0 +1,80 @@
+/* FruitsAndBakey*/
+.fruitsandbakey {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5em;
+  display: flex;
+  gap: 2em;
+  position: relative;
+}
+
+.fruits img {
+  width: 590px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+.description p {
+  color: var(--gray-color);
+}
+
+.vegetables img {
+  width: 590px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.vegetables-description {
+  position: absolute;
+  top: 2em;
+  left: 40em;
+}
+
+.vegetables-description p {
+  color: var(--gray-color);
+}
+/*end of  FruitsAndBakey*/
+
+@media (max-width: 56em){
+  .fruitsandbakey{
+    max-width: 730px;
+    margin: auto 2em;
+  }
+
+  .fruits img{
+    width: 350px;
+  }
+  .vegetables img{
+    width: 350px;
+  }
+  .vegetables-description{
+    left: 25em;
+  }
+}
+
+@media (max-width: 31em){
+  .fruitsandbakey{
+    max-width: 500px;
+    margin: auto 1em;
+    margin-top: 5em;
+    flex-direction: column;
+  }
+  .fruits img{
+    width: 340px;
+  }
+  .vegetables img{
+    width: 340px;
+  }
+  .vegetables-description{
+    top: 17em;
+    left: 2em;
+  }
+} 

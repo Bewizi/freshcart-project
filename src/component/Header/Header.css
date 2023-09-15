@@ -1,0 +1,163 @@
+/* Header */
+.row-one {
+  background-color: var(--header);
+  color: var(--gray-color);
+}
+
+.column-one {
+  max-width: 1090px;
+  margin: auto;
+  /* border: 2px solid slateblue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-one span {
+  font-size: 0.9em;
+  padding: 0.5em 0;
+}
+
+.dropdwon-btn {
+  background-color: var(--header);
+  color: #6c757d;
+  border: none;
+}
+.dropdwon-btn:hover {
+  background-color: var(--header);
+  color: #1a8d2d;
+  border: none;
+}
+
+/* row-two */
+
+.row-two {
+  margin-top: 3em;
+}
+
+.column-two {
+  max-width: 1090px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  position: relative;
+}
+.form-location {
+  position: absolute;
+  left: 20em;
+}
+
+.form {
+  position: absolute;
+  top: 0.3em;
+  display: flex;
+  gap: 0.5em;
+  width: 550px;
+}
+
+.cisearch {
+  margin-left: -2.5em;
+  font-size: 1.2em;
+}
+
+/* class 0f locate */
+.locate {
+  position: relative;
+  width: 150px;
+  padding: 0 2em;
+  margin-left: 1em;
+  color: #6c757d;
+}
+.locate:hover {
+  background-color: #a1a4a7;
+  color: #6c757d;
+}
+.geo {
+  position: absolute;
+  font-size: 0.85em;
+  font-weight: 900;
+  top: 0.8em;
+  left: 1em;
+}
+/*end of class 0f locate */
+
+/* list of icons */
+.icons {
+  display: flex;
+  position: absolute;
+  top: 0.555em;
+  left: 46em;
+  gap: 1em;
+  font-size: 1.3em;
+  color: #6c757d;
+}
+.icons span {
+  /* border: 2px solid green; */
+  position: absolute;
+  top: -0.9em;
+  left: 1em;
+  border-radius: 100%;
+  font-size: 0.55em;
+  width: 20px;
+  height: 20px;
+  padding: 0.1em 0.6em;
+  background-color: #1a8d2d;
+  color: #fff;
+}
+.icons span:last-child {
+  position: absolute;
+  top: -0.9em;
+  left: 8.5em;
+  border-radius: 100%;
+  font-size: 0.55em;
+  width: 20px;
+  height: 20px;
+  padding: 0.1em 0.6em;
+  background-color: #1a8d2d;
+  color: #fff;
+}
+/* close row-two */
+/*end of  Header */
+@media (max-width: 56em){
+  .column-one{
+    max-width: 768px;
+    margin: auto 2em;
+  }
+  .column-two{
+    max-width: 768px;
+    margin: auto 2em;
+  }
+
+.form{
+  display: none;
+}
+.icons{
+  left: 27em;
+}
+}
+
+
+@media (max-width: 31em){
+  .column-one{
+    max-width: 500px;
+    margin: auto;
+  }
+  .column-two{
+    max-width: 500px;
+    margin: auto;
+  }
+ .column-one span{
+  font-size: 1em;
+  
+ }
+  .dropdwon-btn{
+  display: none;
+ }
+  .form{
+  display: none;
+ }
+ .icons{
+  left: 12em;
+ }
+ 
+}
