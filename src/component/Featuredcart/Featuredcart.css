@@ -50,6 +50,8 @@
   }
   .swiper-slide img{
     width: 100px;
+    position: relative;
+    left: -0.5em;
   }
   .swiper-slide span{
     font-size: 0.5em;
