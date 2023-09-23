@@ -34,6 +34,7 @@ function Featuredcart() {
       <Swiper
         slidesPerView={4}
         spaceBetween={20}
+        centeredSlides={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
